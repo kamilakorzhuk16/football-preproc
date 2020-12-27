@@ -1,0 +1,49 @@
+.header
+    display: flex
+    justify-content: space-between
+    padding: 25px 0
+
+    @media screen and (max-width: 670px)
+        flex-direction: column
+        text-align: center
+
+.logo
+    display: flex
+
+    p
+        @include headerp  
+        @media screen and (max-width: 400px)
+            margin-bottom: 20px
+
+    b
+        margin-bottom: 9px
+        font-size: 44px
+
+    img
+        margin: 0 34px
+
+    i 
+        @include headeri
+
+    @media screen and (max-width: 670px)
+        margin: 0 auto 20px
+    
+    @media screen and (max-width: 400px)
+        flex-wrap: wrap
+        justify-content: center
+
+.number 
+    p
+        @include headerp 
+
+    a
+        margin-bottom: 9px
+        color: $color
+        text-decoration: none
+
+    i
+        text-align: right
+        @include headeri
+    
+        @media screen and (max-width: 670px)
+            text-align: center
